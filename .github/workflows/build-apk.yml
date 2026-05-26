@@ -18,6 +18,11 @@ jobs:
         with:
           flutter-version: '3.19.0'
           channel: stable
+      - name: Create local.properties
+        run: |
+          echo "flutter.sdk=${{ env.FLUTTER_ROOT }}" > android/local.properties
+          echo "flutter.versionCode=1" >> android/local.properties
+          echo "flutter.versionName=1.0.0" >> android/local.properties
       - name: Get dependencies
         run: flutter pub get
       - name: Build APK
