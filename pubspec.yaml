@@ -1,0 +1,11 @@
+name: lee_market
+version: 1.0.0+1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.1.0
+  provider: ^6.1.1
+
+flutter:
+  uses-material-design: true
